@@ -24,6 +24,16 @@ header{
     margin: 1px 1px 1px 25px;
 
 }
+.menu{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.logo_menu{
+    display: none;
+}
 .logo{
     display: flex;
     align-items: center;
@@ -82,7 +92,8 @@ position: relative;
     padding: 2px;
     position:absolute;
     top: -3px;
-    margin-right: auto;
+    right: 10px;
+    font-size: 10px;
 }
 img{
     width: 35px;
@@ -300,4 +311,35 @@ nav div:hover {
 }
 .upload:hover{
     display: block;
+}
+
+@media screen and ( max-width: 1000px){
+    nav{
+        flex-direction: row;
+        top: 95%;
+        width: 100%;
+        padding: 0%;
+        height: 80px;
+    }
+    .body_section{
+        padding-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        gap: 50px;
+    }
+}
+
+@media screen and ( max-widt: 800px) {
+    .logo-menu{
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        display: none;
+    }
+    .logo-menu:hover {
+        transform: scale(1.2);
+    }
 }
